@@ -1,0 +1,16 @@
+use("Netflix")
+//? project
+//? sort
+//? skip
+//? limit
+// db.shows.find({name:"Under the Dome"},{name:1,genre:1,status:1,_id:0})
+// db.shows.find({},{name:1,rating:1})
+// db.shows.find({},{name:1}).limit(3)
+// db.shows.find({},{name:1}).skip(3).limit(2)
+// db.shows.find({"rating.average":{$gt:7}},{name:1,rating:1})
+// db.shows.find({"rating.average":{$gt:7}},{name:1,rating:1}).sort({
+//   "rating.average":1
+// })
+db.shows.find()
+
+

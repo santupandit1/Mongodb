@@ -1,0 +1,42 @@
+//! use this database=> collection of table(collection)
+use ("friendData")
+// to do => BSON => binary object notation
+
+//db.friendInfo.find()
+//!CURD 
+//? c=> create 
+// insert one
+db.friendInfo.insert0ne({
+    name :"santosh",
+    eduLevel:"BCT",
+    location :" pokhara"
+})
+// insert many
+db.friendInfo.insertMany({
+   { name :"shyam",
+    eduLevel:"BCT",
+    location :" pokhara"
+   },
+     { name :"Ram",
+    eduLevel:"BCE",
+    location :" KTM"
+   },
+     { name :"gita",
+    eduLevel:"BEL",
+    location :" Bhaktapur"
+   },
+     { name :"Sanjam",
+    eduLevel:"BCT",
+    location :" pokhara"
+   },
+})
+//R => GET/READ/RETRIVE
+//find one 
+db.friendInfo.findOne({name:"santosh"})
+
+//find many
+db.friendInfo.find({location:"ktm"})
+//!D=> delete /remove
+db.friendInfo.deleteOne({
+    name :"santosh"
+})
